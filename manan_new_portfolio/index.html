@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Verma | Virtual Desktop</title>
+    <meta name="description" content="The interactive portfolio of Manan Verma, experienced as a virtual operating system.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/9a5a73b4b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="preloader-terminal">
+            <p>> V/OS initializing...</p>
+            <p>> Mounting virtual drives...</p>
+            <p>> Loading kernel modules... <span class="preloader-ok">OK</span></p>
+            <p>> Starting window manager...</p>
+            <p>> Fetching user profile: Manan Verma...</p>
+            <p>> Accessing skills matrix... <span class="preloader-ok">OK</span></p>
+            <p>> Compiling projects... Done.</p>
+            <p class="preloader-success">> Welcome to VermaOS. Boot sequence complete.</p>
+            <p>> Launching desktop environment<span id="preloader-dots">...</span></p>
+        </div>
+    </div>
+
+    <div id="desktop">
+        <div class="menu-bar">
+            <div class="menu-bar-left">
+                <i class="fa-solid fa-code"></i>
+                <strong>MV</strong>
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Go</span>
+                <span>Window</span>
+                <span>Help</span>
+            </div>
+            <div class="menu-bar-right">
+                <i class="fa-brands fa-bluetooth-b"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+                <span id="clock">11:20 AM</span>
+            </div>
+        </div>
+
+        <div class="window" id="about-window">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-regular fa-address-card"></i> About — Manan Verma</span>
+                <div class="window-controls">
+                    <button class="control-btn close-btn" data-window="about-window">&times;</button>
+                </div>
+            </div>
+            <div class="window-content about-content">
+                <img src="assets/profile.jpg" alt="Manan Verma" class="about-photo">
+                <h2>Manan Verma</h2>
+                <h3>The Code-Slinging Gamer with a Vision</h3>
+                <p>At just 14, I'm a force of focus, fun, and full-stack flair. Balancing life between CBSE books and backend builds, I'm the lead dev behind <strong>BusnTaxi.com</strong>, cooking up sleek React frontends, animated UIs, and even a chatbot.</p>
+                <p>A proud Linux lover on a MacBook M1, my mind lives in the terminal but my ideas stretch way beyond — from science games without electronics to dreams of conquering the Smart India Hackathon.</p>
+                <p>With a gamer’s reflex, a developer’s brain, and a budding entrepreneur’s heart, I'm the kind of teen who codes by night, studies by day, and never stops learning.</p>
+            </div>
+        </div>
+
+        <div class="window" id="projects-window">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-regular fa-folder-open"></i> Projects</span>
+                <div class="window-controls">
+                    <button class="control-btn close-btn" data-window="projects-window">&times;</button>
+                </div>
+            </div>
+            <div class="window-content project-explorer">
+                <div class="sidebar">
+                    <h4>Favorites</h4>
+                    <ul>
+                        <li class="active"><i class="fa-solid fa-star"></i> Featured</li>
+                        <li><i class="fa-solid fa-code-branch"></i> All Projects</li>
+                    </ul>
+                    <h4>Locations</h4>
+                    <ul>
+                       <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="main-panel">
+                    <h3>Featured Projects</h3>
+                    <div class="project-grid">
+                        <div class="project-card featured">
+                            <img src="https://via.placeholder.com/600x350/112240/64ffda.png?text=BusnTaxi.com" alt="BusnTaxi Project">
+                            <div class="project-info">
+                                <h4>BusnTaxi.com</h4>
+                                <p>Lead Developer on a full-scale taxi/bus booking platform. Built with React and Node.js.</p>
+                                <div class="project-links">
+                                    <a href="#" target="_blank">View Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" target="_blank">Source Code <i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h4>Science Game Concept</h4>
+                            <p>An innovative educational game concept requiring no electronics.</p>
+                        </div>
+                        <div class="project-card">
+                            <h4>Hackathon Prototype</h4>
+                            <p>A secret proof-of-concept for the Smart India Hackathon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="skills-window">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-solid fa-swatchbook"></i> Skills Matrix</span>
+                <div class="window-controls">
+                    <button class="control-btn close-btn" data-window="skills-window">&times;</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="skills-container">
+                    <h4><i class="fa-solid fa-laptop-code"></i> Frontend</h4>
+                    <ul><li>React</li><li>JavaScript (ES6+)</li><li>Animated UIs</li><li>HTML5 & CSS3</li></ul>
+                    <h4><i class="fa-solid fa-server"></i> Backend & Languages</h4>
+                    <ul><li>Node.js</li><li>Kotlin</li><li>C Language</li><li>MongoDB</li></ul>
+                    <h4><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Environment</h4>
+                    <ul><li>Git & GitHub</li><li>Linux / Unix</li><li>MacBook M1</li><li>Terminal</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="window" id="terminal-window">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-solid fa-terminal"></i> zsh — manan@vermaos</span>
+                <div class="window-controls">
+                    <button class="control-btn close-btn" data-window="terminal-window">&times;</button>
+                </div>
+            </div>
+            <div class="window-content terminal-content">
+                <p>Last login: Sat Jun 7 11:20:55 on ttys002</p>
+                <p>manan@vermaos ~ % <span class="terminal-command">echo "Hello, world!"</span></p>
+                <p>Hello, world!</p>
+                <p>manan@vermaos ~ % <span class="terminal-command">ls -l social</span></p>
+                <p>total 3</p>
+                <p>-rw-r--r-- 1 manan staff <a href="#" target="_blank">github.txt</a></p>
+                <p>-rw-r--r-- 1 manan staff <a href="#" target="_blank">linkedin.txt</a></p>
+                <p>-rw-r--r-- 1 manan staff <a href="#" target="_blank">twitter.txt</a></p>
+                <p>manan@vermaos ~ % <span class="cursor"></span></p>
+            </div>
+        </div>
+
+
+        <div class="dock">
+            <div class="dock-item" data-window="about-window" title="About Me">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <span class="dot"></span>
+            </div>
+            <div class="dock-item" data-window="projects-window" title="Projects">
+                <i class="fa-solid fa-folder-grid"></i>
+                <span class="dot"></span>
+            </div>
+            <div class="dock-item" data-window="skills-window" title="Skills">
+                <i class="fa-solid fa-swatchbook"></i>
+                <span class="dot"></span>
+            </div>
+            <div class="dock-separator"></div>
+            <div class="dock-item" data-window="terminal-window" title="Terminal">
+                <i class="fa-solid fa-terminal"></i>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
